@@ -1,0 +1,7 @@
+A Stack is a Last In First Out (LIFO) data structure. It supports two basic operations called push and pop.
+The push operation adds an element at the top of the stack, and the pop operation removes an element from the top of the stack.
+The Stack class extends Vector which implements the List interface. A Vector is a re-sizable collection. 
+It grows its size to accommodate new elements and shrinks the size when the elements are removed.
+push : Add element on the top of the stack
+pop :  Remove element from the top of the stack
+peek:  It does not remove the element but only return the element from the top.
