@@ -27,7 +27,7 @@ public class InsertAnElementInArray {
 	    	System.exit(0);
 	    }
 	    else {
-	    System.out.println("Enter the value at u want to enter");
+	    System.out.println("Enter the value  u want to enter");
 	    }
 	    int value = sc.nextInt();
 	    for(int i = a.length-1; i > place;i--)

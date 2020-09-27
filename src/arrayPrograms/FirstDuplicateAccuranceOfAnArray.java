@@ -2,7 +2,7 @@ package arrayPrograms;
 
 import java.util.Scanner;
 
-public class ArrangingAnArrayInDecreaingOrder {
+public class FirstDuplicateAccuranceOfAnArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,25 +17,15 @@ public class ArrangingAnArrayInDecreaingOrder {
 		System.out.println("The arry Is");
 		for(int j : array) {
 			System.out.println(j);
-		} 
-		System.out.println("Rearranged Array Is");
-		for(int i=0;i<arraySize;i++) {
+		}
+		for(int i =0 ; i<arraySize; i++) {
 			for(int j=i+1;j<arraySize;j++) {
-	            if(array[i]<array[j])
-	            {
-	              int temp;
-	              temp=array[j];
-	              array[j]=array[i];
-	              array[i]=temp;
-	            }
+				if(array[i]== array[j]) {
+					System.out.println("The first accurance is " +array[i]);
+					return;
+				}
 			}
 		}
-		for(int k : array) {
-			System.out.println(k);
-		} 
-		
-
 	}
 
 }
-
