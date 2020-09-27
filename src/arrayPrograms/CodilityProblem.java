@@ -2,10 +2,15 @@ package arrayPrograms;
 
 import java.util.Scanner;
 
-public class ArrangingAnArrayInIncreasingOrder {
+public class CodilityProblem {
+	
+	public static void main(String args[]) {
+		 
+		CodilityProblem obj = new CodilityProblem();
+		System.out.println("Smallest Positive Interger That Does Not Occur In Array IS  " + obj.Solution());
+	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public int Solution() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the size of the array you want");
 		int arraySize = sc.nextInt();
@@ -33,8 +38,19 @@ public class ArrangingAnArrayInIncreasingOrder {
 		for(int k : array) {
 			System.out.println(k);
 		} 
-
+		int smallestPositiveInt = 1;
+		if(arraySize==0) {
+			return smallestPositiveInt;
+		}
+		if(arraySize-1<=0) {
+			return smallestPositiveInt;
+		}
+		for(int i =0 ; i< arraySize; i++) {
+			if(array[i]==smallestPositiveInt) {
+				smallestPositiveInt++;
+			}
+		}
+		return smallestPositiveInt;
 	}
-
+	
 }
-
